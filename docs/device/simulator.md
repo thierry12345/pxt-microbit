@@ -1,25 +1,76 @@
 # Simulator
+# Add your Python code here. E.g.
+from microbit import *
 
-The JavaScript simulator allows you to test and execute most BBC micro:bit programs in the browser.
-It allows you to emulate sensor data or user interactions.
+a1 = Image("00000:00000:00550:00550:00550") 
+a2 = Image("00000:00000:10550:10550:10550") 
+a3 = Image("00000:00000:11550:91550:11550") 
+a4 = Image("00000:00000:11550:99550:11550")
+a5 = Image("00000:00000:11550:19550:11550")
+a6 = Image("00000:00000:00550:00550:00550") 
+a7 = Image("00990:09999:00990:00990:00990")
+a =[a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7]
 
-```sim
-input.onButtonPressed(Button.A, () => {
-   basic.showString("A");
-});
-input.onButtonPressed(Button.B, () => {
-   basic.showString("B");
-});
-input.onPinPressed(TouchPin.P0, () => {
-   basic.showString("0");
-});
-input.onPinPressed(TouchPin.P1, () => {
-   basic.showString("1");
-});
-input.onPinPressed(TouchPin.P2, () => {
-   basic.showString("2");
-});
-input.temperature()
-input.compassHeading()
-input.lightLevel()
-```
+
+
+
+c1 = Image("00000:55500:55500:55500:00000")
+c2 = Image("00000:55511:55591:55511:00000")
+c3 = Image("00000:55511:55599:55511:00000")
+c4 = Image("00000:55511:55519:55511:00000")
+c5 = Image("00000:55500:55500:55500:00000")
+
+c =[c1 ,c2 ,c3 ,c4 ,c5 ]
+
+
+t1 = Image("00000:00000:00550:00550:00550")
+t2 = Image("10000:10000:10550:00550:00550") 
+t3 = Image("11000:91000:11550:00550:00550") 
+t4 = Image("11100:99100:11550:00550:00550") 
+t5 = Image("11110:19910:11550:00550:00550") 
+t6 = Image("01111:01991:01551:00550:00550")
+t7 = Image("00111:00199:00551:00550:00550") 
+t8 = Image("00011:00019:00551:00550:00550")
+t9 = Image("00001:00001:00551:00550:00550")
+t10 = Image("00000:00000:00550:00550:00550")
+t11 = Image("00550:00550:00050:00050:00550")
+t12 = Image("10550:10550:10050:00050:00550")
+t13 = Image("11550:91550:11050:00050:00550")
+t14 = Image("11550:99550:11050:00050:00550")
+t15 = Image("00550:19550:11050:00050:00550")
+t16 = Image("01550:01550:01050:00050:00550")
+t17 = Image("00550:00550:00050:00050:00550")
+t18 = Image("09990:90909:99999:09990:09990")
+t19 = Image("00000:00000:00000:00000:00000")
+t20 = Image("09990:90909:99999:09990:09990")
+t21 = Image("00000:00000:00000:00000:00000")
+t22 = Image("09990:90909:99999:09990:09990")
+ 
+t =[t1 ,t2 ,t3 ,t4 ,t5 ,t6 ,t7 ,t8 ,t9 ,t10 ,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22]
+
+
+
+
+
+
+
+
+while True:
+    if button_a.is_pressed():
+        display.show(c, delay=500)
+    elif button_b.is_pressed():
+        display.show(t, delay=500)
+    else:
+        display.show(a, delay=500)
+
+
+
+
+
+
+
+        
+    
+
+    
+
